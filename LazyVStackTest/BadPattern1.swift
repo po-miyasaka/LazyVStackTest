@@ -37,7 +37,7 @@ enum BadPattern1 {
                 Button(action: {
                     tap(object)
                 }, label: {
-                    Text("Button \(object.id)")
+                    Text(" \(object.id)")
                 })
             }
         }

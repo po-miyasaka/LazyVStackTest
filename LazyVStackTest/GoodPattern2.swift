@@ -42,8 +42,7 @@ enum GoodPattern2 {
                 Button(action: {
                     tap(object)
                 }, label: {
-                    Text("Button \(object.id)")
-                    Text("\(object.favorite ? "true" : "false")")
+                    Text(" \(object.id)")
                 })
             }
         }

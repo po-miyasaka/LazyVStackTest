@@ -22,7 +22,7 @@ func makeData () -> [Object] { (0...100).map { Object(data: String($0), favorite
 
 struct ContentView: View {
     var body: some View {
-        
+        ScrollView(.horizontal) {
             HStack(alignment: .top) {
                 VStack {
                     Text("❌BadPattern1").frame(width: 150)
@@ -73,11 +73,25 @@ struct ContentView: View {
                 }
                 
                 VStack {
+                    Text("✅GoodPattern7_2")
+                    Text("GoodPattern7でセルの更新もしてみる")
+                    GoodPattern7_2.ContentView()
+                }
+                
+                VStack {
                     Text("❌BadPattern2").frame(width: 150)
                     Text("Listをつかう")
                     BadPattern2.ContentView()
                 }
+                VStack {
+                    Text("✅GoodPattern8")
+                    Text("BadPattern1で\nEquatableの比較時にセルの一意な値も共に比較する")
+                    GoodPattern7.ContentView()
+                }
             }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding()
     }
 }
 

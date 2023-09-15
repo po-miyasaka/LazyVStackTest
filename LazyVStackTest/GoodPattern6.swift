@@ -49,7 +49,7 @@ enum GoodPattern6 {
                 Button(action: {
                     tap(object)
                 }, label: {
-                    Text("Button \(object.data)")
+                    Text(" \(object.data)")
                 })
             }
         }

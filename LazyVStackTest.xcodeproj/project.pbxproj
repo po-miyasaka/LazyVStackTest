@@ -20,6 +20,7 @@
 		D59E970E2AB4809A00CA369B /* GoodPattern6.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E970D2AB4809A00CA369B /* GoodPattern6.swift */; };
 		D59E97102AB4820E00CA369B /* BadPattern2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E970F2AB4820E00CA369B /* BadPattern2.swift */; };
 		D59E97122AB499E100CA369B /* GoodPattern7.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E97112AB499E100CA369B /* GoodPattern7.swift */; };
+		D59E97142AB4A48A00CA369B /* GoodPattern8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E97132AB4A48A00CA369B /* GoodPattern8.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D59E970D2AB4809A00CA369B /* GoodPattern6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodPattern6.swift; sourceTree = "<group>"; };
 		D59E970F2AB4820E00CA369B /* BadPattern2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadPattern2.swift; sourceTree = "<group>"; };
 		D59E97112AB499E100CA369B /* GoodPattern7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodPattern7.swift; sourceTree = "<group>"; };
+		D59E97132AB4A48A00CA369B /* GoodPattern8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodPattern8.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				D59E970D2AB4809A00CA369B /* GoodPattern6.swift */,
 				D59E97112AB499E100CA369B /* GoodPattern7.swift */,
 				D59E970F2AB4820E00CA369B /* BadPattern2.swift */,
+				D59E97132AB4A48A00CA369B /* GoodPattern8.swift */,
 				D59E96F72AB47FA600CA369B /* Assets.xcassets */,
 				D59E96F92AB47FA600CA369B /* Preview Content */,
 			);
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59E97142AB4A48A00CA369B /* GoodPattern8.swift in Sources */,
 				D59E96F62AB47FA400CA369B /* ContentView.swift in Sources */,
 				D59E970C2AB4809100CA369B /* GoodPattern5.swift in Sources */,
 				D59E97122AB499E100CA369B /* GoodPattern7.swift in Sources */,
