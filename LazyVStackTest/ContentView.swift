@@ -17,7 +17,7 @@ struct Object: Equatable {
     }
 }
 
-func makeData () -> [Object] { (0...100).map { Object(data: String($0), favorite: false ) } }
+func makeData () -> [Object] { (0...1000).map { Object(data: String($0), favorite: false ) } }
 
 
 struct ContentView: View {
@@ -70,12 +70,6 @@ struct ContentView: View {
                     Text("✅GoodPattern7")
                     Text("BadPattern1で\nEquatableの比較時にセルの一意な値も共に比較する")
                     GoodPattern7.ContentView()
-                }
-                
-                VStack {
-                    Text("✅GoodPattern7_2")
-                    Text("GoodPattern7でセルの更新もしてみる")
-                    GoodPattern7_2.ContentView()
                 }
                 
                 VStack {

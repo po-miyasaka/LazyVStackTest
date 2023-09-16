@@ -15,7 +15,7 @@ enum GoodPattern6 {
     /////////////
     ///
     ///
-    struct Object6 {
+    struct Object6: Equatable {
         var data: String
         init(data: String) {
             self.data = data
@@ -29,6 +29,8 @@ enum GoodPattern6 {
                     ForEach(dataArray, id: \.data ) { object in
                         Row(object: object) { object in
                             print(object)
+                            let index = dataArray.firstIndex(of: object)!
+                            dataArray[index] = .init(data: object.data)
                         }
                     }
                 }
@@ -45,6 +47,7 @@ enum GoodPattern6 {
         var tap: (Object6) -> Void
         @ViewBuilder
         var body: some View {
+            let _ = print("body", object.data)
             HStack {
                 Button(action: {
                     tap(object)

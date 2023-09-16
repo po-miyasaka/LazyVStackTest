@@ -20,6 +20,8 @@ enum GoodPattern8 {
             List(dataArray, id: \.id){ object in
                 Row(object: object) { object in
                     print(object)
+                    let index = dataArray.firstIndex(of: object)!
+                    dataArray[index] = .init(data: object.id, favorite: !object.favorite)
                 }
             }
         }
@@ -35,11 +37,13 @@ enum GoodPattern8 {
         var tap: (Object) -> Void
         @ViewBuilder
         var body: some View {
+            let _ = print("body", object.id)
             HStack {
                 Button(action: {
                     tap(object)
                 }, label: {
                     Text(" \(object.id)")
+                    Text(object.favorite ? "★" : "")
                 })
             }
         }

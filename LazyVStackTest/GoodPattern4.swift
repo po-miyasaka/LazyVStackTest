@@ -44,7 +44,7 @@ enum GoodPattern4 {
                 //                    tap(object)
                 //                }, label: {
                 Text("\(object.id)")
-                Text(object.favorite ? "true" : "false")
+                Text(object.favorite ? "★" : "")
                 //                })
             }
             .onTapGesture {
