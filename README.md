@@ -13,8 +13,8 @@ Button.actionを使わずにonTapGestureを使えば不要に残ることはさ�
 
 
 以前間違った結論としてUniqueな情報をEquatableに含めるというものを提案したが、これでは結局比較結果がfalseになり局所アップデートにならない。
-<detail>
-<summary>間違った結論<summary/>
+<details>
+<summary>間違った結論</summary>
 # 結論
 Xcode15からLazyVStack内の要素が再利用される挙動っぽくて、その都合でEquatableの比較時にオブジェクトの一意な情報も比較することで想定どおりの挙動になる。
 また、Listでも再利用されるっぽいので同じように実装する必要あり。
@@ -27,7 +27,7 @@ static func == (lhs: Self, rhs: Self) -> Bool {
 +             && lhs.object.id == rhs.object.id
     }
 ```
-<detail/>
+</details>
 
 
 # 調査
