@@ -34,12 +34,10 @@ Button.actionを使わずにonTapGestureを使うことで解決できる。
 様々なパターンで実装して確かめた。
 ![image.png](image.png)
 
-## 環境
+# 環境
 * 2.3 GHz 8-Core Intel Core i9
 * MacOS Sonoma 14.0
 * Version 15.0 (15A240d)
 
 # 補足
-上記の対応をしない状態でも、以下のような変更をすることで何故か不具合が起きなくなったので困惑した。
-* 要素内でHStackで囲わないようにする
-
+HStackで要素を囲わないことで何故か挙動が正常になるみたいなこともあり困惑した。
