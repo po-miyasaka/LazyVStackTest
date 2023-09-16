@@ -8,7 +8,8 @@ LazyVStackで、Equatableな要素View内に実装したボタンタップ時に
 
 Button.actionが不要に情報を残ってしまうバグ。
 Button.actionを使わずにonTapGestureを使えば不要に残ることはさけられる。
-また、セルの再利用されることにより、Equatableを実装しなかったとしても、updateされるセルはView上で目視できているセルに限られるので、Equatableに準拠しないのも手。
+
+また、セルの再利用されることにより、Equatableを実装しなかったとしても、updateされるセルはView上で目視できているセルに限られるので、ButtonをしてEquatableに準拠しないのも手。
 
 
 以前間違った結論としてUniqueな情報をEquatableに含めるというものを提案したが、これでは結局比較結果がfalseになり局所アップデートにならない。
@@ -41,5 +42,4 @@ static func == (lhs: Self, rhs: Self) -> Bool {
 # 補足
 上記の対応をしない状態でも、以下のような変更をすることで何故か不具合が起きなくなったので困惑した。
 * 要素内でHStackで囲わないようにする
-* Button.actionを利用せずにonTapGestureを利用する
 
